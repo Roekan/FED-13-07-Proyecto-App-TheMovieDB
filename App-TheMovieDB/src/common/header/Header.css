@@ -1,0 +1,38 @@
+.logo-header{
+    width: 3rem;
+    height: auto;
+
+}
+
+.box-header{
+    background-color: #6b01a2 ;
+    border-bottom: 2px solid #283fcd;
+    border-end-end-radius: 3rem;
+}
+
+.link-header{
+    text-decoration: none;
+    color: rgb(174, 255, 201);
+    
+    transition: all 0.6s;
+
+}
+.link-header:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.6s;
+}
+
+.box-link-header{
+    cursor: pointer;
+    padding: 0.2rem 0rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: 2px solid #283fcd;
+    transition: all 0.6s;
+}
+
+.box-link-header:hover{
+    background-color: #323c89;
+    transition: all 0.6s;
+    box-shadow: 2px 2px 2px #000;
+}
