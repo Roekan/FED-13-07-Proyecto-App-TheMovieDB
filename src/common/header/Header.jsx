@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css'
 import { Col, Container, Row } from 'react-bootstrap';
-
+import Logo from './../../../public/logo/logoInvertido.png'
 
 
 export const Header = () => {
@@ -11,7 +11,7 @@ export const Header = () => {
  
           <Row className='d-flex align-items-center justify-content-around '>
             <Col className='d-flex align-items-center justify-content-center  py-2' xs={12} md={1} lg={1}>
-              <img className='logo-header' src="https://roekan.github.io/FED-13-07-Proyecto-App-TheMovieDB/public/logo/logoInvertido.png"  />
+              <img className='logo-header' src={Logo} />
             </Col>
             <Col className='d-flex align-items-center justify-content-left  py-2' xs={4} md={4} lg={4}>
               
