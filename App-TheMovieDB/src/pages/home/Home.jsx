@@ -19,28 +19,15 @@ const[films, setFilms]=useState([])
   },[])
 
 
-
-
-
-
-
   return (
-
     <>
       <Container fluid>
-        <Row>
-
+        <Row className='d-flex align-items-center justify-content-center py-3'>
           {films.map((card)=>{
-
             return (<MovieCard key={card.id} img={card.poster_path} title={card.title} description={card.overview} {...card} />)
-
           })}
-
-          
-
         </Row>
       </Container>
     </>
-
   )
 }

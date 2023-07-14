@@ -69,3 +69,11 @@ button:focus-visible {
 } */
 
 
+body{
+  background-color: #000;
+  background-image: url(./../public/background/background-body.png);
+  background-size:9rem;
+  background-repeat: repeat;
+}
+
+
