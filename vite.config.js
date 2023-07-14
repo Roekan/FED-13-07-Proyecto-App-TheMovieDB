@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react-swc'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/"
+  base: "/FED-13-07-Proyecto-App-TheMovieDB/"
 })
