@@ -62,13 +62,14 @@ const seeDetail =() =>{
     <Card ref={movie} className='box-card' style={{ width: '18rem' }}>
       <Card.Img variant="top" src={img
       ?'https://www.themoviedb.org/t/p/w300_and_h450_bestv2'+img
-      :'./../../public/logo/logo.png' //Poner imagen por defecto
+      :'./../../public/no-image.png' //Poner imagen por defecto
     }/>
       <Card.Body>
         <Card.Title className='title-card'>{title}</Card.Title>
-        <Card.Text className='info-card'>
-          {description}
-        </Card.Text>
+        {description 
+        ?<Card.Text className='info-card'>{description}</Card.Text>
+        :<Card.Text > -Without description- </Card.Text>}
+        
       </Card.Body>
       <Card.Link className='box-button-card'>
       <Button className='button-card' variant="primary" onClick={()=>seeDetail()}>Go somewhere</Button>

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { bringFilmsPagination } from '../../services/apiCalls'
+import { bringSeriesPagination } from '../../services/apiCalls'
 import { Container, Row, Pagination, Col } from 'react-bootstrap'
 import { MovieCard } from '../../common/movieCard/MovieCard'
 
-export const Home = () => {
+export const Series = () => {
 
 
 const[films, setFilms]=useState([])
@@ -12,7 +12,7 @@ const [totalPages, setTotalPages]=useState(1)
 
 
   useEffect(()=>{
-    bringFilmsPagination(page)
+    bringSeriesPagination(page)
     .then((res)=>{
         setFilms(res.results);
         setTotalPages(res.total_pages)
