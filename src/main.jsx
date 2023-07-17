@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* BrowserRouter nos implementa la navegación entre páginas */}
-    <BrowserRouter>
+    <BrowserRouter basename='/FED-13-07-Proyecto-App-TheMovieDB'>
     <App />
     </BrowserRouter>
   </React.StrictMode>,

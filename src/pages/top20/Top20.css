@@ -1,0 +1,26 @@
+.linkTop button{
+    text-decoration: none;
+    color: rgb(174, 255, 201);
+    transition: all 0.6s;
+    cursor: pointer;
+    padding: 0.4rem 1.2rem;
+    margin: 0 1rem;
+    border: 2px solid #283fcd;
+    border-radius: 4rem!important;
+    background-color: transparent!important;
+}
+
+.linkTop button:active, .linkTop button:hover{
+background-color: #323c89!important;
+color: rgb(255, 255, 255);
+}
+
+.linkTop button:active{
+    color: rgb(174, 255, 201)!important;
+}
+
+.box-linkTop{
+    text-decoration: none;
+    color: rgb(174, 255, 201);
+    transition: all 0.6s;
+}
