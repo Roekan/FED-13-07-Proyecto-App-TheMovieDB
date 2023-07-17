@@ -11,7 +11,7 @@ export const MovieCard = ({img,title,description,...props}) => {
 
 
 const movie = React.useRef(null)
-
+console.log(movie)
 if(movie && movie.current){
   const height = movie.current.clientHeight;
   const width = movie.current.clientWidth;
