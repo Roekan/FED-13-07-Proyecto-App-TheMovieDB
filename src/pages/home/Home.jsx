@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import './Home.css'
 import { bringFilms } from '../../services/apiCalls'
 import { Container, Row } from 'react-bootstrap'
 import { MovieCard } from '../../common/movieCard/MovieCard'
+import './Home.css'
 
 export const Home = () => {
 
@@ -21,10 +21,10 @@ const[films, setFilms]=useState([])
 
   return (
     <>
-      <Container fluid>
-        <Row className='d-flex align-items-center justify-content-center py-3'>
+      <Container className='box-cards'>
+        <Row className='d-flex align-items-top justify-content-center py-3'>
           {films.map((card)=>{
-            return (<MovieCard key={card.id} img={card.poster_path} title={card.title} description={card.overview} {...card} />)
+            return (<MovieCard key={card.id} id={card.id} img={card.poster_path} title={card.title} description={card.overview} {...card} />)
           })}
         </Row>
       </Container>
