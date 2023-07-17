@@ -9,9 +9,10 @@ export const Body = () => {
     <>
     <Routes>
       {/* <Route path="*" element={<Navigate to ="/FED-13-07-Proyecto-App-TheMovieDB/" />}/> */}
-      <Route path="/FED-13-07-Proyecto-App-TheMovieDB/" element={<Home />}/>
-      <Route path="/FED-13-07-Proyecto-App-TheMovieDB/series/" element={<Series />}/>
-      <Route path="/FED-13-07-Proyecto-App-TheMovieDB/top20/" element={<Top20 />}/>
+      <Route path="/FED-13-07-Proyecto-App-TheMovieDB/" element={<Home />}>
+        <Route path="series" element={<Series />}/>
+        <Route path="top20" element={<Top20 />}/>
+      </Route>
     </Routes>
     </>
     

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Card, Button } from 'react-bootstrap';
 import './MovieCard.css'
@@ -8,46 +8,60 @@ import './MovieCard.css'
 
 export const MovieCard = ({img,title,description,...props}) => {
 
-
-
-const movie = React.useRef(null)
-if(movie && movie.current){
-  const height = movie.current.clientHeight;
-  const width = movie.current.clientWidth;
-
-  movie.current.addEventListener('mousemove', (evt) =>{
-      const {layerX, layerY} = evt
-      const yRotation = (
-          (layerX - width / 2) / width
-      )*2
-      const xRotation = (
-          (layerY - height / 2) / width
-      )*2
+  const movie = React.useRef(null)
+  let height =0;
+  let width =0;
   
-      const stringStyle = `
-      perspective(500px)
-      scale(1.01)
-      rotateX(${xRotation}deg)
-      rotateY(${yRotation}deg)`
+  useEffect(()=>{
+
+    if(movie && movie.current){
   
-      movie.current.style.transform = stringStyle
-  })
-  
-  movie.current.addEventListener('mouseout', () =>{
+      height = movie.current.clientHeight;
+      width = movie.current.clientWidth;
+
+    }
+      /*Functions */
+      const functionMouseMove = (evt) =>{
+        const {layerX, layerY} = evt
+        const yRotation = (
+            (layerX - width / 2) / width
+        )*2
+        const xRotation = (
+            (layerY - height / 2) / width
+        )*2
+
+        const stringStyle = `
+        perspective(500px)
+        scale(1.01)
+        rotateX(${xRotation}deg)
+        rotateY(${yRotation}deg)`
+
+        movie.current.style.transform = stringStyle
+      }
+      const functionMouseOut = () =>{
       movie.current.style.transform = `
       perspective(500px)
       scale(1)
       rotateX(0)
       rotateY(0)`
-  })
-}
+      }
+
+  movie.current.addEventListener('mousemove', functionMouseMove);
+  movie.current.addEventListener('mouseout', functionMouseOut);
+
+  
 
 
+  return function cleanUpListener() 
+  {
+    movie.current.removeEventListener("mousemove", functionMouseMove)
+    movie.current.removeEventListener("mouseout", functionMouseOut)
+  }
+
+}, [])
 
 
 const navigate = useNavigate();
-
-
 const seeDetail =() =>{
 
   //A continuacion voy a la página de detalle de ese personaje
