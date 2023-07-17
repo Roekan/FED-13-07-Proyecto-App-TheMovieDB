@@ -6,23 +6,24 @@ import './MovieCard.css'
 
 
 
-export const MovieCard = ({id,img,title,description,...props}) => {
+export const MovieCard = ({img,title,description,...props}) => {
 
 
-const card = document.getElementById(`card-${id}`)
 
-if(card){
-  const height = card.clientHeight;
-  const width = card.clientWidth;
+const movie = React.useRef(null)
 
-  card.addEventListener('mousemove', (evt) =>{
+if(movie && movie.current){
+  const height = movie.current.clientHeight;
+  const width = movie.current.clientWidth;
+
+  movie.current.addEventListener('mousemove', (evt) =>{
       const {layerX, layerY} = evt
       const yRotation = (
           (layerX - width / 2) / width
-      )*5
+      )*2
       const xRotation = (
           (layerY - height / 2) / width
-      )*5
+      )*2
   
       const stringStyle = `
       perspective(500px)
@@ -30,11 +31,11 @@ if(card){
       rotateX(${xRotation}deg)
       rotateY(${yRotation}deg)`
   
-      card.style.transform = stringStyle
+      movie.current.style.transform = stringStyle
   })
   
-  card.addEventListener('mouseout', () =>{
-      card.style.transform = `
+  movie.current.addEventListener('mouseout', () =>{
+      movie.current.style.transform = `
       perspective(500px)
       scale(1)
       rotateX(0)
@@ -58,15 +59,15 @@ const seeDetail =() =>{
 
 
   return (
-    <Card id={`card-${id}`} className='box-card' style={{ width: '18rem' }}>
+    <Card ref={movie} className='box-card' style={{ width: '18rem' }}>
       <Card.Img variant="top" src={'https://www.themoviedb.org/t/p/w300_and_h450_bestv2'+img}/>
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className='title-card'>{title}</Card.Title>
         <Card.Text className='info-card'>
           {description}
         </Card.Text>
       </Card.Body>
-      <Card.Link>
+      <Card.Link className='box-button-card'>
       <Button className='button-card' variant="primary" onClick={()=>seeDetail()}>Go somewhere</Button>
       </Card.Link>
     </Card>

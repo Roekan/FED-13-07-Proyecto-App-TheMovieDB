@@ -24,7 +24,7 @@ const[films, setFilms]=useState([])
       <Container className='box-cards'>
         <Row className='d-flex align-items-top justify-content-center py-3'>
           {films.map((card)=>{
-            return (<MovieCard key={card.id} id={card.id} img={card.poster_path} title={card.title} description={card.overview} {...card} />)
+            return (<MovieCard key={card.id} img={card.poster_path} title={card.title} description={card.overview} {...card} />)
           })}
         </Row>
       </Container>
