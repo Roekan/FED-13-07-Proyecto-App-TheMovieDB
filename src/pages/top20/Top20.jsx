@@ -43,14 +43,14 @@ export const Top20 = () => {
           <Tab  eventKey="films" title="Peliculas">
           <Row className='d-flex align-items-top justify-content-center py-3'>
             {films.map((card)=>{
-              return (<MovieCard key={card.id} img={card.poster_path} title={card.title} description={card.overview} {...card} />)
+              return (<MovieCard key={card.id} type="movie" img={card.poster_path} title={card.title} description={card.overview} {...card} />)
             })}
           </Row>
           </Tab>
           <Tab  eventKey="series" title="Series">
             <Row className='d-flex align-items-top justify-content-center py-3'>
               {series.map((card)=>{
-                return (<MovieCard key={card.id} img={card.poster_path} title={card.title} description={card.overview} {...card} />)
+                return (<MovieCard key={card.id} type="serie" img={card.poster_path} title={card.title} description={card.overview} {...card} />)
               })}
             </Row>
           </Tab>

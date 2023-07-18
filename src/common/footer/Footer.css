@@ -24,11 +24,11 @@
 }
 
 .box-footer{
-    background-color: #111;
+    background-color: #283fcd;
     border-start-start-radius: 3rem;
-    border-top: 2px solid #283fcd;
-    border-left: 2px solid #283fcd;
-    border-right: 2px solid #283fcd;
+    border-top: 2px solid #6b01a2;
+    border-left: 2px solid #6b01a2;
+    border-right: 2px solid #6b01a2;
 }
 
 .link-footer{
@@ -39,12 +39,12 @@
     padding: 0.6rem 1.6rem;
     background-color: transparent;
     border-radius: 2rem;
-    border: 2px solid #283fcd;
+    border: 2px solid #6b01a2;
     transition: all 0.6s;
 
 }
 
 .box-link-footer>.active{
 
-    background-color: #323c89;
+    background-color: #34004e;
 }

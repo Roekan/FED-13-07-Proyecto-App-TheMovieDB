@@ -6,8 +6,6 @@ a{
 .box-card{ 
     margin: 0.4rem;
     background: rgb(107,1,162);
-    background: -moz-linear-gradient(0deg, rgba(107,1,162,1) 31%, rgba(40,63,205,1) 59%);
-    background: -webkit-linear-gradient(0deg, rgba(107,1,162,1) 31%, rgba(40,63,205,1) 59%);
     background: linear-gradient(0deg, rgba(107,1,162,1) 31%, rgba(40,63,205,1) 59%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6b01a2",endColorstr="#283fcd",GradientType=1);
     color: rgb(174, 255, 201);

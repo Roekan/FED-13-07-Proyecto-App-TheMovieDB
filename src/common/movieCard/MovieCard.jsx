@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Card, Button } from 'react-bootstrap';
+import {  Link } from 'react-router-dom'
+import { Card, Row } from 'react-bootstrap';
 import './MovieCard.css'
 
 
 
 
-export const MovieCard = ({img,title,description,...props}) => {
+export const MovieCard = ({img,type ,title,description,id,...props}) => {
 
+  console.log(props)
   const movie = React.useRef(null)
   let height =0;
   let width =0;
@@ -63,14 +64,6 @@ export const MovieCard = ({img,title,description,...props}) => {
 }, [])
 
 
-const navigate = useNavigate();
-const seeDetail =() =>{
-
-  //A continuacion voy a la página de detalle de ese personaje
-  navigate("/detail");
-
-}
-
 
 
   return (
@@ -86,9 +79,9 @@ const seeDetail =() =>{
         :<Card.Text > -Without description- </Card.Text>}
         
       </Card.Body>
-      <Card.Link className='box-button-card'>
-      <Button className='button-card' variant="primary" onClick={()=>seeDetail()}>Go somewhere</Button>
-      </Card.Link>
+      <Row className='box-button-card'>
+        <Link className='button-card py-2'  to={`/${type}/${id}`}>Ver detalle</Link>
+      </Row>
     </Card>
   )
 }

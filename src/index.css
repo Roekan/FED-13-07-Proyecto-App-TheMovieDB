@@ -68,6 +68,18 @@ button:focus-visible {
   }
 } */
 
+@font-face {
+  font-family: 'quicksand';
+  src: url('./../public/fonts/quicksand/Quicksand_Book.otf') format('otf');
+}
+
+*{
+  font-family: 'quicksand';
+}
+
+
+
+
 
 body{
   background-color: #000;

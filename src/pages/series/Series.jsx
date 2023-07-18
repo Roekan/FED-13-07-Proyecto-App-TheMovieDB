@@ -42,7 +42,7 @@ const [totalPages, setTotalPages]=useState(1)
       <Container className='box-cards'>
         <Row className='d-flex align-items-top justify-content-center py-3'>
           {films.map((card)=>{
-            return (<MovieCard key={card.id} img={card.poster_path} title={card.title} description={card.overview} {...card} />)
+            return (<MovieCard key={card.id} type="serie" img={card.poster_path} title={card.title} description={card.overview} {...card} />)
           })}
         </Row>
         <Row className='d-flex align-items-center justify-content-center py-3'>

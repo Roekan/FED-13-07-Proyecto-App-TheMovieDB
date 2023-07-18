@@ -1,14 +1,14 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 import{ Container, Col, Row } from 'react-bootstrap'
-import Logo from './../../../public/logo/logo.png'
+import Logo from './../../../public/logo/logoInvertido.png'
 import './Footer.css'
 
 export const Footer = () => {
   return (
     <>
-    <Container fluid>
-      <Row className='box-footer' >
+    <Container fluid >
+      <Row className='box-footer pb-2' >
         <Col className='d-flex align-items-center justify-content-center box-links-footer my-2 box-link-footer' sm={12} md={4} lg={4}>
         <NavLink  to="/" className='mx-3 link-footer' >Peliculas</NavLink>
         <NavLink  to="series" className='mx-3 link-footer' >Series</NavLink>
