@@ -54,8 +54,10 @@ export const MovieCard = ({img,title,description,...props}) => {
 
   return function cleanUpListener() 
   {
-    movie.current.removeEventListener("mousemove", functionMouseMove)
-    movie.current.removeEventListener("mouseout", functionMouseOut)
+    if(movie.current){
+      movie.current.removeEventListener("mousemove", functionMouseMove)
+      movie.current.removeEventListener("mouseout", functionMouseOut)
+    }
   }
 
 }, [])

@@ -56,9 +56,6 @@ export const Top20 = () => {
           </Tab>
         </Tabs>
       </Row>
-      
-
-      
     </Container>
   )
 }
