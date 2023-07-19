@@ -87,3 +87,13 @@ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 25
     fill:#323c89;
     transition: all 0.6s;
 }
+
+.add-favorite path{
+    transition: all 0.6s;
+    fill:#f00;
+}
+
+.add-favorite path:hover{
+    transition: all 0.6s;
+    scale:1.1;
+}

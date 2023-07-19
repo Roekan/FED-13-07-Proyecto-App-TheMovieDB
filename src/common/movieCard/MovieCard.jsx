@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Card, Row, Col, Button } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 import "./MovieCard.css";
 import { useDispatch, useSelector } from "react-redux";
 //Importaciones de RDX
-import { getFavorites } from "../../reducers/sliceFavorites/"
+import { addFavorites, deleteFavorites, getFavorites } from "../../reducers/sliceFavorites/"
 
 
 
@@ -15,6 +15,8 @@ export const MovieCard = ({ img, type, title, description, id, ...props }) => {
 
   //Variables de Redux
   const dispatch = useDispatch();
+
+
 
   useEffect(() => {
     if (movie && movie.current) {
@@ -53,19 +55,29 @@ export const MovieCard = ({ img, type, title, description, id, ...props }) => {
 
 
 
-  const addFavorite=()=>{
-
-
-    const film = {img, type, title, description, id, ...props}
-
-
-    //Leer los datos de Favoritos que habia en RDX
-let favorites = useSelector(getFavorites)
-
-
-    dispatch(addFavorites({ favorites: [film, ...favorites]  }));
-
+  const addToFavorite=()=>{
+    const data = {img, type, title, description, id, ...props}
+    //Usamos la funcion addFavorite de sliceFavorites para añadir a favoritos
+    
+    if(isFavorite()){   
+      dispatch(deleteFavorites(data));
+    }else{
+      dispatch(addFavorites(data));
+    }
   }
+
+ const favorites = useSelector(getFavorites).favorites
+
+  const isFavorite = ()=>{
+    if (favorites.find(element => element.id == id)){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+
+
 
 
   return (
@@ -101,28 +113,29 @@ let favorites = useSelector(getFavorites)
           xs={4}
           md={2}
         >
-          <Button className=" py-2" onClick={addFavorite()}>
+          <div className=" py-2" onClick={()=>{addToFavorite()}}>
             <svg
-              className="button-card-img"
+              className={`${isFavorite() ? 'add-favorite': 'button-card-img'}`}
               xmlns="http://www.w3.org/2000/svg"
               width="40"
               height="40"
               viewBox="0 0 24 24"
             >
               <g>
-                <path
+                <path 
+                
                   d="M19.071 13.142L13.414 18.8a2 2 0 0 1-2.828 0l-5.657-5.657A5 5 0 1 1 12 6.072a5 5 0 0 1 7.071 7.07Z"
                   opacity=".16"
                 ></path>
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M19.071 13.142L13.414 18.8a2 2 0 0 1-2.828 0l-5.657-5.657a5 5 0 0 1 7.07-7.071a5 5 0 0 1 7.072 7.071Z"
                 ></path>
               </g>
             </svg>
-          </Button>
+          </div>
         </Col>
       </Row>
     </Card>
