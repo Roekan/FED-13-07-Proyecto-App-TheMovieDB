@@ -1,0 +1,10 @@
+.text-error-home{
+    background-color: #111;
+    border: 2px solid #6b01a2;
+    transition: all 0.8s;
+    color:red
+}
+
+.box-cards{
+    flex-grow: 1;
+}

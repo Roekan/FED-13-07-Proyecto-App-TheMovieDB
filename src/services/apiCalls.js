@@ -10,7 +10,8 @@ const top20Films = `https://api.themoviedb.org/3/movie/top_rated?api_key=${ApiKe
 const top20Series = `https://api.themoviedb.org/3/tv/top_rated?api_key=${ApiKey}`
 const filmById = `https://api.themoviedb.org/3/movie/`
 const serieById = `https://api.themoviedb.org/3/tv/`
-
+const filmsByName = `https://api.themoviedb.org/3/search/movie`
+const seriesByName = `https://api.themoviedb.org/3/search/tv`
 
 export const bringFilmsPagination = async (page) => {
     const {data} = await axios.get(`${films}&page=${page}`)
@@ -40,5 +41,15 @@ export const bringOneFilm = async(id)=>{
 
 export const bringOneSerie = async(id)=>{
     const {data} = await axios.get(`${serieById}${id}?api_key=${ApiKey}`)
+    return data
+}
+
+export const bringFilmsByName = async(name, page)=>{
+    const {data} = await axios.get(`${filmsByName}?query=${name}&page=${page}&api_key=${ApiKey}`)
+    return data
+}
+
+export const bringSeriesByName = async(name, page)=>{
+    const {data} = await axios.get(`${seriesByName}?query=${name}&page=${page}&api_key=${ApiKey}`)
     return data
 }
