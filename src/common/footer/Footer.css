@@ -44,7 +44,8 @@
 
 }
 
-.box-link-footer>.active{
+.link-footer:hover ,.box-link-footer .active{
 
     background-color: #34004e;
+    box-shadow: 4px 4px 3px #000, 0px 0px 6px #000;
 }

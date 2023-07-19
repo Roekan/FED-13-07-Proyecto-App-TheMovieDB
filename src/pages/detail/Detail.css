@@ -1,13 +1,13 @@
 .img-detail{
     border: 2px solid #283fcd;
-    transition: all 0.8s;
     background-color: #6b01a2;
+    transition: all 0.8s;
 }
 .img-detail:hover{
     color: rgb(255, 255, 255);
-    transition: all 0.8s;
-    box-shadow: 5px 5px 5px #6b01a2;
+    box-shadow: 5px 5px 5px #6b01a2, 0px 0px 6px #6b01a2;
     scale:1.01;
+    transition: all 0.8s;
 }
 
 .button-card-detail{
@@ -27,13 +27,21 @@
     background-color: #323c89;
     text-decoration: none;
     border: 2px solid #283fcd;
+    box-shadow: 5px 5px 5px #6b01a2, 0px 0px 6px #6b01a2;
     transition: all 0.6s;
-    box-shadow: 2px 2px 2px #000;
 }
 
 .text-detail-row{
     background-color: #111;
     border: 2px solid #6b01a2;
+    transition: all 0.8s;
+}
+
+.text-detail-row:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px #6b01a2, 0px 0px 6px #6b01a2;
+    scale:1.01;
+    transition: all 0.8s;
 }
 
 .text-detail{
@@ -45,4 +53,45 @@
 .text-detail:hover{
     color:#fff ;
     transition: all 0.6s;
+}
+
+.img-back-detail{
+    cursor: pointer;
+    transition: all 0.8s;
+    border: 2px solid #283fcd;
+    background-color: #6b01a2;
+    border-radius: 1rem;
+}
+
+.img-back-detail:hover{
+    box-shadow: 5px 5px 5px #6b01a2, 0px 0px 6px #6b01a2;
+    scale:1.1;
+    transition: all 0.8s;
+}
+
+.img-back-detail path{
+    fill:#aeffc9;
+    transition: all 0.8s;
+}
+.img-back-detail path:hover{
+    fill:#fff;
+    transition: all 0.8s;
+}
+
+.progress-bar{
+    color: #aeffc9;
+    background: rgb(107,1,162); 
+    background: linear-gradient(90deg, rgba(107,1,162,1) 31%, rgba(40,63,205,1) 59%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6b01a2",endColorstr="#283fcd",GradientType=1);
+    transition: all 0.8s;
+}
+
+.progress-bar:hover{
+    color: #fff;
+    transition: all 0.8s;
+}
+
+.bar-votes-detail{
+    background-color: #333;
+    color: #283fcd!important;
 }

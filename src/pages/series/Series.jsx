@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { bringSeriesPagination } from '../../services/apiCalls'
 import { Container, Row, Pagination, Col } from 'react-bootstrap'
 import { MovieCard } from '../../common/movieCard/MovieCard'
+import { Searcher } from '../../common/searcher/Searcher'
 
 export const Series = () => {
 
@@ -40,6 +41,9 @@ const [totalPages, setTotalPages]=useState(1)
   return (
     <>
       <Container className='box-cards'>
+        <Row className='d-flex align-items-top justify-content-center py-3'>
+          <Searcher />
+        </Row>
         <Row className='d-flex align-items-top justify-content-center py-3'>
           {films.map((card)=>{
             return (<MovieCard key={card.id} type="serie" img={card.poster_path} title={card.title} description={card.overview} {...card} />)

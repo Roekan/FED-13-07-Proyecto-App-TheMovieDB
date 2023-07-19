@@ -9,15 +9,17 @@ export const Footer = () => {
     <>
     <Container fluid >
       <Row className='box-footer pb-2' >
-        <Col className='d-flex align-items-center justify-content-center box-links-footer my-2 box-link-footer' sm={12} md={4} lg={4}>
-        <NavLink  to="/" className='mx-3 link-footer' >Peliculas</NavLink>
-        <NavLink  to="series" className='mx-3 link-footer' >Series</NavLink>
-        <NavLink  to="search" className='mx-3 link-footer' >Top20</NavLink>
-        </Col>
-        <Col  sm={12} md={4} lg={4}>
+        <Col className='d-flex align-items-center justify-content-center box-links-footer my-2 box-link-footer' sm={12} md={6} lg={6}>
+        <Row>
+          <Col className='d-flex align-items-center justify-content-center links-footer' sm={12} md={4} ><NavLink  to="/" className='mx-3 link-footer' >Peliculas</NavLink></Col>
+          <Col className='d-flex align-items-center justify-content-center links-footer' sm={12} md={4} ><NavLink  to="series" className='mx-3 link-footer' >Series</NavLink></Col>
+          <Col className='d-flex align-items-center justify-content-center links-footer' sm={12} md={4} ><NavLink  to="top20" className='mx-3 link-footer' >Top20</NavLink></Col>
+        </Row>
+        
         
         </Col>
-        <Col className=' d-flex align-items-center justify-content-center flex-column' sm={12} md={4} lg={4}>
+
+        <Col className=' d-flex align-items-center justify-content-center flex-column' sm={12} md={6} lg={6}>
         <a href="/FED-13-07-Proyecto-App-TheMovieDB/" className='py-1' ><img className='logo-footer' src={Logo} /></a>
 
         <span className='creative-commons-footer'>

@@ -9,7 +9,7 @@ export const Body = () => {
   return (
     <>
     <Routes>
-      {/* <Route path="*" element={<Navigate to ="/FED-13-07-Proyecto-App-TheMovieDB/" />}/> */}
+      {/* <Route path="*" element={<Navigate to ="/" />}/> */}
       <Route path="/" element={<Home />}/>
       <Route path="/series/" element={<Series />}/>
       <Route path="/top20/" element={<Top20 />}/>
