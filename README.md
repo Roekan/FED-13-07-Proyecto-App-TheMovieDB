@@ -149,21 +149,21 @@ Agradezco a mis compañeros la ayuda con este proyecto:
 <a href="https://github.com/Maxigamble/" target="_blank"><img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/github/github-green.svg" target="_blank"></a> 
 
 - *David*  
-<a href="https://github.com/DavidTL95/" target="_blank"><img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/images/github/github-red.svg" target="_blank"></a>
+<a href="https://github.com/DavidTL95/" target="_blank"><img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/github/github-red.svg" target="_blank"></a>
 
 - *Fran*  
-<a href="https://www.github.com/userGithub/" target="_blank"><img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/images/github/github-purple.svg" target="_blank"></a> 
+<a href="https://www.github.com/userGithub/" target="_blank"><img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/github/github-purple.svg" target="_blank"></a> 
 
 Y a mis profesores:
 
 - *Jose*  
-<a href="https://github.com/GeeksHubsAcademy" target="_blank"><img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/images/github/github-green.svg" target="_blank"></a> 
+<a href="https://github.com/GeeksHubsAcademy" target="_blank"><img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/github/github-green.svg" target="_blank"></a> 
 
 - *David*  
-<a href="https://github.com/GeeksHubsAcademy" target="_blank"><img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/images/github/github-brown.svg" target="_blank"></a>
+<a href="https://github.com/GeeksHubsAcademy" target="_blank"><img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/github/github-brown.svg" target="_blank"></a>
 
 - *Mara*  
-<a href="https://github.com/GeeksHubsAcademy" target="_blank"><img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/images/github/github-pink.svg" target="_blank"></a> 
+<a href="https://github.com/GeeksHubsAcademy" target="_blank"><img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/github/github-pink.svg" target="_blank"></a> 
 
 ## Contacto
 
