@@ -82,7 +82,7 @@ Peliculas<br><br>
     Desktop:<br>
     <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/peliculas-desktop.png"><br><br>
     Movil:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/-mobile.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/peliculas-mobile.png"><br><br> 
 
 
 Series<br><br>
@@ -113,11 +113,11 @@ Favoritos<br><br>
     <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/favoritos-mobile.png"><br><br> 
 
 
-Juego finalizado<br><br>
+Detalle<br><br>
     Desktop:<br>
     <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/detalle-desktop.png"><br><br>
     Movil:<br>
-    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/detalle-desktop.png"><br><br> 
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/detalle-mobile.png"><br><br> 
 
 
 ## Licencia
