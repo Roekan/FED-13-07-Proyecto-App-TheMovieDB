@@ -27,13 +27,13 @@ Este proyecto requeria hacer una página web con llamadas a la API "The Movie Da
 
 ## Stack
 <div align="center">
-<a href="https://lenguajehtml.com/">
+<a href="https://getbootstrap.com/">
     <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/bootstrap-logo.png"/>
 </a>
 <a href="https://lenguajecss.com/">
     <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/css-logo.png"/>
 </a>
-<a href="https://getbootstrap.com/">
+<a href="https://lenguajehtml.com/">
     <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/html-logo.png"/>
 </a>
 <a href="https://www.javascript.com/">
