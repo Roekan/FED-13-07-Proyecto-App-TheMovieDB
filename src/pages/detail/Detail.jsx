@@ -68,7 +68,7 @@ useEffect(()=>{
                           <Row className='d-flex justify-content-between alignt-items-center py-3'>
                             <Col className='d-flex justify-content-start alignt-items-center flex-column p-3 rounded-5 text-detail-row' >
                               <p className='text-detail fw-bold '>Puntuación ({info.vote_count} votos) </p>
-                              <ProgressBar className='bar-votes-detail ' now={info.vote_average * 10} label={`${info.vote_average}`} />
+                              <ProgressBar className='bar-votes-detail ' now={info.vote_average * 10} label={`${(info.vote_average).toFixed(2)} / 10`} />
                             </Col>
                             <Col xs={1}></Col>
                             <Col className='d-flex justify-content-start alignt-items-center flex-column p-3 rounded-5 text-detail-row' >
