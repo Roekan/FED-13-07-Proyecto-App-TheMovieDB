@@ -14,12 +14,12 @@ export const sliceFavorites = createSlice({
           favorites: [...state.favorites, action.payload]
         }
       },
+      
       deleteFavorites: (state, action) => {
         const stateFilter = state.favorites.filter(element => element.id!=action.payload.id)
         return {
           ...state,
           favorites: stateFilter
-
         }
       },
       
@@ -30,7 +30,6 @@ export const sliceFavorites = createSlice({
         }
       }
     }
-    
 });
 
 //exporto las ACCIONES.....

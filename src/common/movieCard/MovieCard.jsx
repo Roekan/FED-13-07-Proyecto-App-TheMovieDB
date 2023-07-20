@@ -12,7 +12,6 @@ export const MovieCard = ({ img, type, title, description, id, ...props }) => {
   const movie = React.useRef(null);
   let height = 0;
   let width = 0;
-
   //Variables de Redux
   const dispatch = useDispatch();
 
@@ -23,7 +22,7 @@ export const MovieCard = ({ img, type, title, description, id, ...props }) => {
       height = movie.current.clientHeight;
       width = movie.current.clientWidth;
     }
-    /*Functions */
+    /*Funciones*/
     const functionMouseMove = (evt) => {
       const { layerX, layerY } = evt;
       const yRotation = ((layerX - width / 2) / width) * 2;
@@ -35,6 +34,7 @@ export const MovieCard = ({ img, type, title, description, id, ...props }) => {
         rotateY(${yRotation}deg)`;
       movie.current.style.transform = stringStyle;
     };
+
     const functionMouseOut = () => {
       movie.current.style.transform = `
       perspective(500px)
@@ -42,6 +42,7 @@ export const MovieCard = ({ img, type, title, description, id, ...props }) => {
       rotateX(0)
       rotateY(0)`;
     };
+
     movie.current.addEventListener("mousemove", functionMouseMove);
     movie.current.addEventListener("mouseout", functionMouseOut);
 
@@ -58,7 +59,6 @@ export const MovieCard = ({ img, type, title, description, id, ...props }) => {
   const addToFavorite=()=>{
     const data = {img, type, title, description, id, ...props}
     //Usamos la funcion addFavorite de sliceFavorites para añadir a favoritos
-    
     if(isFavorite()){   
       dispatch(deleteFavorites(data));
     }else{
@@ -66,8 +66,7 @@ export const MovieCard = ({ img, type, title, description, id, ...props }) => {
     }
   }
 
- const favorites = useSelector(getFavorites).favorites
-
+  const favorites = useSelector(getFavorites).favorites
   const isFavorite = ()=>{
     if (favorites.find(element => element.id == id)){
       return true;

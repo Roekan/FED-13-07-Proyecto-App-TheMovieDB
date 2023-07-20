@@ -1,4 +1,3 @@
-import React from 'react'
 import { Routes,Route, Navigate } from 'react-router-dom'
 import { Home } from '../../pages/home/Home'
 import { Series } from '../../pages/series/Series'
@@ -10,7 +9,7 @@ export const Body = () => {
   return (
     <>
     <Routes>
-      {/* <Route path="*" element={<Navigate to ="/" />}/> */}
+      <Route path="*" element={<Navigate to ="/" />}/>
       <Route path="/" element={<Home />}/>
       <Route path="/series/" element={<Series />}/>
       <Route path="/top20/" element={<Top20 />}/>

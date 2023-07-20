@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { bringTop20Films, bringTop20Series } from '../../services/apiCalls'
 import { Container, Row, Tabs, Tab } from 'react-bootstrap'
 import { MovieCard } from '../../common/movieCard/MovieCard'
 import './Top20.css'
 
-
-
 export const Top20 = () => {
-
   const[films, setFilms]=useState([])
   const[series, setSeries]=useState([])
-
   
   useEffect(()=>{
     bringTop20Films()
@@ -20,7 +16,6 @@ export const Top20 = () => {
     .catch((error)=>{console.log("Error llamada: ",error)})
   },[])
 
-
   useEffect(()=>{
     bringTop20Series()
     .then((res)=>{
@@ -28,12 +23,6 @@ export const Top20 = () => {
       })
     .catch((error)=>{console.log("Error llamada: ",error)})
   },[])
-
-
-
-
-
-
 
   return (
 

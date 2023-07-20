@@ -9,15 +9,12 @@ a{
     background: linear-gradient(0deg, rgba(107,1,162,1) 31%, rgba(40,63,205,1) 59%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6b01a2",endColorstr="#283fcd",GradientType=1);
     color: rgb(174, 255, 201);
-
-/*Style hover*/
-
-transition: box-shadow .3s
+    transition: box-shadow .3s
 }
 
 .box-card:hover{
-box-shadow: 0px 0px 50px rgba(255,255,255,0.75);
-transition: box-shadow .3s
+    box-shadow: 0px 0px 50px rgba(255,255,255,0.75);
+    transition: box-shadow .3s
 }
 
 .title-card{
@@ -32,14 +29,13 @@ transition: box-shadow .3s
 }
 
 .info-card:after {
-content:"...";
-position:absolute;
-bottom:0;
-right:0;
-padding:0 20px 1px 45px;
-user-select: none;
-
-background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#6b01a2), color-stop(50%, #6b01a2));
+    content:"...";
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:0 20px 1px 45px;
+    user-select: none;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#6b01a2), color-stop(50%, #6b01a2));
 }
 
 .box-button-card{
@@ -63,7 +59,6 @@ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 25
     background-color: #323c89;
     text-decoration: none;
     border: 2px solid #283fcd;
-
     box-shadow: 4px 4px 3px #000, 0px 0px 6px #000;
 }
 
@@ -83,7 +78,6 @@ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 25
 }
 
 .button-card-img path:hover {
-    
     fill:#323c89;
     transition: all 0.6s;
 }

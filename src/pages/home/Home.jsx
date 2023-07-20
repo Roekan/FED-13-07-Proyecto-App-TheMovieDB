@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import {  bringFilmsPagination,  bringFilmsByName } from "../../services/apiCalls";
 import { Container, Row, Pagination, Col, Spinner } from "react-bootstrap";
 import { MovieCard } from "../../common/movieCard/MovieCard";
@@ -101,7 +101,6 @@ export const Home = () => {
             </Row>
             </>
           }
-
         </Row>
         <Row className="d-flex align-items-center justify-content-center py-3">
           <Col className="d-flex align-items-center justify-content-center">

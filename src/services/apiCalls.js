@@ -1,8 +1,6 @@
 import axios from 'axios'
 
-
 const ApiKey = import.meta.env.VITE_SECRETKEY
-
 
 const films = `https://api.themoviedb.org/3/movie/upcoming?api_key=${ApiKey}&language=en-US`
 const series = `https://api.themoviedb.org/3/tv/airing_today?api_key=${ApiKey}&language=en&page=1`
@@ -25,7 +23,6 @@ export const bringSeriesPagination = async (page) => {
 
 export const bringTop20Films = async () => {
     const {data} = await axios.get(`${top20Films}`)
-    console.log(data)
     return data
 }
 

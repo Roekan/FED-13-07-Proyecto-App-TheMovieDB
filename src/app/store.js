@@ -1,11 +1,9 @@
 
 import { configureStore } from '@reduxjs/toolkit';
 import sliceFavorites from '../reducers/sliceFavorites';
-
 import storage from 'redux-persist/lib/storage';
 import { combineReducers } from 'redux';
 import { persistReducer } from 'redux-persist';
-
 import thunk from 'redux-thunk';
 
 // Persistencia de superestado en local Storage
@@ -15,10 +13,8 @@ const persistConfig = {
     }
 
 //Combinacion de reducers provenientes de las Slices en un solo objeto
-
 const reducers = combineReducers({
     favorites: sliceFavorites,
-
 });
 
 //Pasamos el reducers a la funcion que nos crea la persistencia de los datos

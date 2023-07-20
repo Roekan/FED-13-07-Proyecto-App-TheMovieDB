@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import {useParams, Link, useNavigate} from 'react-router-dom'
 import {bringOneFilm, bringOneSerie} from '../../services/apiCalls'
@@ -23,19 +23,15 @@ useEffect(()=>{
     bringOneSerie(id)
     .then(res => setInfo(res))
   }
-
-
 }, [])
 
-
   return (
-   <>
+    <>
           {
             info &&(
                     <>
                     <Container fluid >
                       <Row className='d-flex justify-content-center alignt-items-center my-4'>
-
                         <Col className='d-flex justify-content-top alignt-items-center flex-column px-5 pb-3  rounded-5' xs={10} md={5} lg={5}>
                           <Row>
                             <Col className='d-flex justify-content-start alignt-items-center py-2 box-back-detail' xs={12}>
@@ -52,7 +48,6 @@ useEffect(()=>{
                               />
                             </Col>
                           </Row>
-                        
                         </Col>
                         <Col className='d-flex justify-content-start alignt-items-center flex-column px-5 rounded-5 box-text-detail' xs={12} md={7} lg={7}>
                           <Row>
@@ -68,16 +63,12 @@ useEffect(()=>{
                             {
                               info.homepage && <Link className='button-card-detail align-self-center py-1'  to={info.homepage}>Ir a la web</Link>
                             }
-                            
-
                             </Col>
                           </Row>
-
                           <Row className='d-flex justify-content-between alignt-items-center py-3'>
                             <Col className='d-flex justify-content-start alignt-items-center flex-column p-3 rounded-5 text-detail-row' >
-                            <p className='text-detail fw-bold '>Puntuación ({info.vote_count} votos) </p>
-                            <ProgressBar className='bar-votes-detail ' now={info.vote_average * 10} label={`${info.vote_average}`} />
-                            
+                              <p className='text-detail fw-bold '>Puntuación ({info.vote_count} votos) </p>
+                              <ProgressBar className='bar-votes-detail ' now={info.vote_average * 10} label={`${info.vote_average}`} />
                             </Col>
                             <Col xs={1}></Col>
                             <Col className='d-flex justify-content-start alignt-items-center flex-column p-3 rounded-5 text-detail-row' >
@@ -90,7 +81,6 @@ useEffect(()=>{
                               })
                               }
                               </Row>
-                              
                             </Col>
                           </Row>                          
                         </Col>
@@ -99,7 +89,6 @@ useEffect(()=>{
                     </>
                     )
           }
-        
-   </>
+    </>
   )
 }

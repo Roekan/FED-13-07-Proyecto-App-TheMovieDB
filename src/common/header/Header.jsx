@@ -9,7 +9,6 @@ export const Header = () => {
   return (
     <>
     <Container fluid className=' box-header'>
- 
           <Row className='d-flex align-items-center justify-content-between '>
             <Col className='d-flex align-items-center justify-content-center  py-2' xs={12} md={1} lg={1}>
             <a href="/FED-13-07-Proyecto-App-TheMovieDB/" ><img className='logo-header' src={Logo} /></a>
@@ -25,6 +24,5 @@ export const Header = () => {
           </Row>
     </Container>
     </>
-    
   )
 }
