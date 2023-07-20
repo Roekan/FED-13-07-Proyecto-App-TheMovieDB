@@ -18,7 +18,7 @@ export const Header = () => {
                 <Col className='d-flex align-items-center justify-content-center py-1 box-link-header ' xs={6} md={3}> <NavLink to="/" className= "link-header">Películas</NavLink> </Col>
                 <Col className='d-flex align-items-center justify-content-center py-1 box-link-header ' xs={6} md={3}> <NavLink to="series" className=' link-header' >Series</NavLink> </Col>
                 <Col className='d-flex align-items-center justify-content-center py-1 box-link-header ' xs={6} md={3}> <NavLink to="top20" className=' link-header' >Top 20</NavLink> </Col>
-                <Col className='d-flex align-items-center justify-content-center py-1 box-link-header ' xs={6} md={3}> <NavLink to="favorites" className=' link-header' >Favorites</NavLink> </Col>
+                <Col className='d-flex align-items-center justify-content-center py-1 box-link-header ' xs={6} md={3}> <NavLink to="favorites" className=' link-header' >Favoritos</NavLink> </Col>
               </Row>
             </Col>
           </Row>
