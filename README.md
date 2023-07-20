@@ -27,28 +27,34 @@ Este proyecto requeria hacer una página web con llamadas a la API "The Movie Da
 ## Stack
 <div align="center">
 <a href="https://lenguajehtml.com/">
-    <img height="50px" width="auto" src= "https://roekan.github.io/FED-11-01-Proyecto-master-mind/images/lenguajes/html-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/bootstrap-logo.png"/>
 </a>
 <a href="https://lenguajecss.com/">
-    <img height="50px" width="auto" src= "https://roekan.github.io/FED-11-01-Proyecto-master-mind/images/lenguajes/bootstrap-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/css-logo.png"/>
 </a>
 <a href="https://getbootstrap.com/">
-    <img height="50px" width="auto" src= "https://roekan.github.io/FED-11-01-Proyecto-master-mind/images/lenguajes/css-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/html-logo.png"/>
 </a>
 <a href="https://www.javascript.com/">
-    <img height="50px" width="auto" src= "https://roekan.github.io/FED-11-01-Proyecto-master-mind/images/lenguajes/js-logo.png"/>
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/js-logo.png"/>
+</a>
+<a href="https://es.react.dev/">
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/react-logo.png"/>
+</a>
+<a href="https://redux.js.org/">
+    <img height="50px" width="auto" src= "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/lenguajes/redux-logo.png"/>
 </a>
  </div>
 
 ## Vistas
 
 
-Index<br><br>
+Home<br><br>
 
 Desktop:<br>
-<img src="./images/vistas/desktop/index.png"><br><br>
+<img src="./images/vistas/desktop/peliculas-desktop.png"><br><br>
 Movil:<br>
-<img src="./images/vistas/movil/index.png"><br><br> 
+<img src="./public/preview/mobile/peliculas-mobile.png"><br><br> 
 
 
 Instrucciones<br><br>
