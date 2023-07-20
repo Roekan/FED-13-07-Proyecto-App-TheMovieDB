@@ -6,6 +6,7 @@
     <li><a href="#objetivo">Objetivo</a></li>
     <li><a href="#deploy">Deploy</a></li>
     <li><a href="#stack">Stack</a></li>
+    <li><a href="#libraries">Libraries</a></li>
     <li><a href="#vistas">Vistas</a></li>
     <li><a href="#licencia">Licencia</a></li>
     <li><a href="#webgrafia">Webgrafia</a></li>
@@ -46,55 +47,77 @@ Este proyecto requeria hacer una página web con llamadas a la API "The Movie Da
 </a>
  </div>
 
+## Libraries
+<div align="center">
+
+<a href="https://axios-http.com/">
+Axios
+</a><br>
+<a href="https://es.legacy.reactjs.org/docs/react-dom.html">
+ReactDOM
+</a><br>
+<a href="https://reactrouter.com/">
+React Router
+</a><br>
+<a href="https://react-bootstrap.netlify.app/">
+React Bootstrap
+</a><br>
+<a href="https://react-redux.js.org/">
+React Redux
+</a><br>
+<a href="https://www.npmjs.com/package/redux-persist">
+Redux Persist
+</a><br>
+<a href="https://www.npmjs.com/package/redux-thunk">
+Redux Thunk
+</a><br>
+<a href="https://redux-toolkit.js.org/">
+Redux Toolkit
+</a><br>
+ </div>
+
 ## Vistas
 
-
-Home<br><br>
-
-Desktop:<br>
-<img src="./images/vistas/desktop/peliculas-desktop.png"><br><br>
-Movil:<br>
-<img src="./public/preview/mobile/peliculas-mobile.png"><br><br> 
+Peliculas<br><br>
+    Desktop:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/peliculas-desktop.png"><br><br>
+    Movil:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/-mobile.png"><br><br> 
 
 
-Instrucciones<br><br>
-
-Desktop:<br>
-<img src="./images/vistas/desktop/instrucciones.png"><br><br>
-Movil:<br>
-<img src="./images/vistas/movil/instrucciones.png"><br><br> 
-
-
-Opciones<br><br>
-
-Desktop:<br>
-<img src="./images/vistas/desktop/settings.png"><br><br>
-Movil:<br>
-<img src="./images/vistas/movil/settings.png"><br><br> 
+Series<br><br>
+    Desktop:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/series-desktop.png"><br><br>
+    Movil:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/series-mobile.png"><br><br> 
 
 
-Juego<br><br>
+Top20<br><br>
+-Peliculas<br><br>
+    Desktop:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/top20-peliculas-desktop.png"><br><br>
+    Movil:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/top20-peliculas-mobile.png"><br><br> 
 
-Desktop:<br>
-<img src="./images/vistas/desktop/partida.png"><br><br>
-Movil:<br>
-<img src="./images/vistas/movil/partida.png"><br><br> 
+-Series<br><br>
+    Desktop:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/top20-series-desktop.png"><br><br>
+    Movil:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/top20-series-mobile.png"><br><br> 
+
+
+Favoritos<br><br>
+    Desktop:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/favoritos-desktop.png"><br><br>
+    Movil:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/favoritos-mobile.png"><br><br> 
 
 
 Juego finalizado<br><br>
-
-Desktop:<br>
-<img src="./images/vistas/desktop/partida-finalizada.png"><br><br>
-Movil:<br>
-<img src="./images/vistas/movil/partida-finalizada.png"><br><br> 
-
-
-Mensaje modal<br><br>
-
-Desktop:<br>
-<img src="./images/vistas/desktop/partida-mensaje-modal.png"><br><br>
-Movil:<br>
-<img src="./images/vistas/movil/partida-mensaje-modal.png"><br><br> 
+    Desktop:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/desktop/detalle-desktop.png"><br><br>
+    Movil:<br>
+    <img src="https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/preview/mobile/detalle-desktop.png"><br><br> 
 
 
 ## Licencia
@@ -103,16 +126,19 @@ Este proyecto se encuentra bajo licencia de Álvaro Fernández Arribas
 ## Webgrafia:
 Para conseguir mi objetivo he recopilado información de:
 
-- [stackoverflow.com](https://stackoverflow.com/) Para algunas funciones de JS
-- [www.w3schools.com](https://www.w3schools.com/) Para algunas funciones de JS y diseños CSS
-- [blog.logrocket.com](https://blog.logrocket.com/) Para los diseños CSS
+- [react-bootstrap.netlify.app](https://react-bootstrap.netlify.app/) Para algunos diseños CSS y HTML
+- [www.w3schools.com](https://www.w3schools.com/) Para algunos diseños CSS
+- [reactrouter.com](https://reactrouter.com/) Para funcionalidad de REACT
+- [www.npmjs.com](https://www.npmjs.com/) Para la obtencion de librerias
+- [www.themoviedb.org](https://www.themoviedb.org/) Para la obtencion de los elementos de la API
+- [developer.themoviedb.org/docs](https://developer.themoviedb.org/docs) Para la obtencion de informacion de organizacion de elementos de la API
 - [www.iconhunt.site](https://www.iconhunt.site/) Para la obtencion de iconos
-
+- [www.cleanpng.com](https://www.cleanpng.com/) Para la obtencion de imágenes
 
 También he usado herramientas de:
-- [www.favicon.cc](https://www.favicon.cc/?) Para la creacion del favicon de la página
-- [animista.net](https://animista.net/play/basic/swing) Para la creacion de animaciones CSS
-- [www.craiyon.com](https://www.craiyon.com/) Para la creacion de imagenes
+- [www.cssmatic.com/box-shadow](https://www.cssmatic.com/box-shadow) Para la creacion de estilos CSS
+- [cssgradient.io](https://cssgradient.io/) Para la creacion de estilos CSS
+- [programmerclick.com](https://programmerclick.com/) Para la creacion de estilos CSS
 - [www.svgbackgrounds.com](https://www.svgbackgrounds.com/) Para la creacion de imagenes
 
 ## Agradecimientos:
