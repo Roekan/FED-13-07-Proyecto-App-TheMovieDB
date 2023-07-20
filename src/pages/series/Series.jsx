@@ -99,8 +99,9 @@ export const Series = () => {
         </Row>
         <Row className="d-flex align-items-center justify-content-center py-3">
           <Col className="d-flex align-items-center justify-content-center">
-            <Pagination>
+           <Pagination className=" p-2 box-pagination-home">
               <Pagination.Prev
+              className="pagination-button-home"
                 disabled={page <= 1}
                 onClick={() => {
                   cambiarPagina(page - 1);

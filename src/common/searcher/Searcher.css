@@ -33,6 +33,7 @@
 
 
 .input-searcher:focus {
+  color:#aeffc9;
   border: 1px solid #6b01a2;
   outline: none;
   box-shadow:  inset 0px 0px 10px rgba(107,1,162,0.5),inset 0px 0px 10px rgba(107,30,162,0.5), 0px 0px 100px rgba(40, 63, 205, 0.8), 0px 0px 100px rgba(92, 111, 234, 0.5);
