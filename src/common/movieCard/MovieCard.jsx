@@ -86,7 +86,7 @@ export const MovieCard = ({ img, type, title, description, id, ...props }) => {
         src={
           img
             ? "https://www.themoviedb.org/t/p/w300_and_h450_bestv2" + img
-            : "./../../public/no-image.png" //Poner imagen por defecto
+            : "https://raw.githubusercontent.com/Roekan/FED-13-07-Proyecto-App-TheMovieDB/master/public/no-image.png" //Poner imagen por defecto
         }
       />
       <Card.Body>
