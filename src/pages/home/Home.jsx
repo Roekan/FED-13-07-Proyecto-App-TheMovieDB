@@ -1,9 +1,12 @@
 import { useEffect, useState, useRef } from "react";
-import {  bringFilmsPagination,  bringFilmsByName } from "../../services/apiCalls";
+import {
+  bringFilmsPagination,
+  bringFilmsByName,
+} from "../../services/apiCalls";
 import { Container, Row, Pagination, Col, Spinner } from "react-bootstrap";
 import { MovieCard } from "../../common/movieCard/MovieCard";
 import { Searcher } from "../../common/searcher/Searcher";
-import './Home.css'
+import "./Home.css";
 
 export const Home = () => {
   const [films, setFilms] = useState([]);
@@ -21,21 +24,21 @@ export const Home = () => {
   };
 
   useEffect(() => {
-    setLoading(true)
-    setError(false)
+    setLoading(true);
+    setError(false);
     if (input == "") {
-        bringFilmsPagination(page)
-          .then((res) => {
-            setFilms(res.results);
-            setTotalPages(res.total_pages);
-          })
-          .catch((error) => {
-            setError(true)
-            console.log("Error llamada: ", error);
-          })
-          .finally(()=>{
-            setLoading(false)
-          });
+      bringFilmsPagination(page)
+        .then((res) => {
+          setFilms(res.results);
+          setTotalPages(res.total_pages);
+        })
+        .catch((error) => {
+          setError(true);
+          console.log("Error llamada: ", error);
+        })
+        .finally(() => {
+          setLoading(false);
+        });
     } else {
       setTimeout(() => {
         bringFilmsByName(input, page)
@@ -44,18 +47,18 @@ export const Home = () => {
             setTotalPages(res.total_pages);
           })
           .catch((error) => {
-            setError(true)
+            setError(true);
             console.log("Error llamada: ", error);
           })
-          .finally(()=>{
-            setLoading(false)
+          .finally(() => {
+            setLoading(false);
           });
       }, 500);
     }
   }, [page, input]);
 
   const cambiarPagina = (pag) => {
-    window.scrollTo({top:anchor.current.offsetTop,behavior:"smooth"})
+    window.scrollTo({ top: anchor.current.offsetTop, behavior: "smooth" });
     let pagina = pag;
     if (pagina < 1) {
       pagina = 1;
@@ -73,40 +76,43 @@ export const Home = () => {
           <Searcher changeValue={(e) => changeValue(e)} />
         </Row>
         <Row className="d-flex align-items-top justify-content-center py-3">
+          {!loading &&
+            films.length > 0 &&
+            !error &&
+            films.map((card) => {
+              return (
+                <MovieCard
+                  key={card.id}
+                  type="movie"
+                  img={card.poster_path}
+                  title={card.title}
+                  description={card.overview}
+                  {...card}
+                />
+              );
+            })}
 
-          {!loading && films.length>0 && !error &&
-          films.map((card) => {
-            return (
-              <MovieCard
-                key={card.id}
-                type="movie"
-                img={card.poster_path}
-                title={card.title}
-                description={card.overview}
-                {...card}
-              />
-            );
-          })}
+          {loading && !error && <Spinner animation="border" variant="danger" />}
 
-          { loading && !error &&
-            <Spinner animation="border" variant="danger" />
-          }
-
-          { error || !films.length &&
-            <>
-            <Row className="d-flex justify-content-center alignt-items-center">
-              <Col className='d-flex ustify-content-center alignt-items-center flex-column py-3 rounded-5 text-error-home ' xs={8}>
-                No se han encontrado resultados
-              </Col>
-            </Row>
-            </>
-          }
+          {error ||
+            (!films.length && (
+              <>
+                <Row className="d-flex justify-content-center alignt-items-center">
+                  <Col
+                    className="d-flex ustify-content-center alignt-items-center flex-column py-3 rounded-5 text-error-home "
+                    xs={8}
+                  >
+                    No se han encontrado resultados
+                  </Col>
+                </Row>
+              </>
+            ))}
         </Row>
         <Row className="d-flex align-items-center justify-content-center py-3">
           <Col className="d-flex align-items-center justify-content-center">
             <Pagination className=" p-2 box-pagination-home">
               <Pagination.Prev
-              className="pagination-button-home"
+                className="pagination-button-home"
                 disabled={page <= 1}
                 onClick={() => {
                   cambiarPagina(page - 1);

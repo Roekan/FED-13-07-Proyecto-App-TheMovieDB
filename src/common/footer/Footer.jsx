@@ -8,12 +8,12 @@ export const Footer = () => {
     <>
     <Container fluid >
       <Row className='box-footer pb-2' >
-        <Col className='d-flex align-items-center justify-content-center box-links-footer my-2 box-link-footer' sm={12} md={8} lg={8}>
+        <Col className='d-flex align-items-center justify-content-start box-links-footer my-2 box-link-footer' sm={12} md={8} lg={8}>
           <Row>
-            <Col className='d-flex align-items-center justify-content-center links-footer' sm={6} md={3} ><NavLink  to="/" className='mx-3 link-footer' >Peliculas</NavLink></Col>
-            <Col className='d-flex align-items-center justify-content-center links-footer' sm={6} md={3} ><NavLink  to="series" className='mx-3 link-footer' >Series</NavLink></Col>
-            <Col className='d-flex align-items-center justify-content-center links-footer' sm={6} md={3} ><NavLink  to="top20" className='mx-3 link-footer' >Top20</NavLink></Col>
-            <Col className='d-flex align-items-center justify-content-center links-footer' sm={6} md={3} ><NavLink  to="favorites" className='mx-3 link-footer' >Favoritos</NavLink></Col>
+            <Col className='d-flex align-items-center justify-content-center links-footer' sm={6} md={3} ><NavLink  to="/" className=' link-footer' >Peliculas</NavLink></Col>
+            <Col className='d-flex align-items-center justify-content-center links-footer' sm={6} md={3} ><NavLink  to="series" className=' link-footer' >Series</NavLink></Col>
+            <Col className='d-flex align-items-center justify-content-center links-footer' sm={6} md={3} ><NavLink  to="top20" className=' link-footer' >Top20</NavLink></Col>
+            <Col className='d-flex align-items-center justify-content-center links-footer' sm={6} md={3} ><NavLink  to="favorites" className=' link-footer' >Favoritos</NavLink></Col>
           </Row>
         </Col>
         <Col className=' d-flex align-items-center justify-content-center flex-column' sm={12} md={4} lg={4}>

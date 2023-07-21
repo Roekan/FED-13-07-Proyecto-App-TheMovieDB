@@ -16,7 +16,6 @@ export const MovieCard = ({ img, type, title, description, id, ...props }) => {
   const dispatch = useDispatch();
 
 
-
   useEffect(() => {
     if (movie && movie.current) {
       height = movie.current.clientHeight;

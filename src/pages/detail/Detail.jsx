@@ -11,8 +11,10 @@ export const Detail = () => {
     const id = useParams().id
     const type = useParams().type
     const [info, setInfo] = useState()
-
     const navigate = useNavigate()
+
+    console.log(id)
+    console.log(type)
 
 useEffect(()=>{
 
