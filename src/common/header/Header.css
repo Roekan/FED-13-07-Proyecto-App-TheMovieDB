@@ -31,7 +31,10 @@
     box-shadow: 4px 4px 3px #000, 0px 0px 6px #000;
 }
 
-
+.cantFavoritos{
+    font-weight: bold;
+    color: #fff;
+}
 
 
 

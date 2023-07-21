@@ -10,6 +10,8 @@ export const Favorites = () => {
 
  let rdxCartFavorites = useSelector(getFavorites);
 
+
+ 
   useEffect(() => {
     setFavorites(rdxCartFavorites.favorites)
   }, [rdxCartFavorites.favorites]);
