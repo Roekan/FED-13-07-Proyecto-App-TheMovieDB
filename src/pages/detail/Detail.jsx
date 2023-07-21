@@ -32,7 +32,7 @@ useEffect(()=>{
           {
             info &&(
                     <>
-                    <Container fluid >
+                    <Container className='box-details' fluid >
                       <Row className='d-flex justify-content-center alignt-items-center my-4'>
                         <Col className='d-flex justify-content-top alignt-items-center flex-column px-5 pb-3  rounded-5' xs={10} md={5} lg={5}>
                           <Row>

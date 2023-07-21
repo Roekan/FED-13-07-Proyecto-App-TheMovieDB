@@ -1,3 +1,8 @@
+.box-details{
+    flex-grow: 1;
+}
+
+
 .img-detail{
     border: 2px solid #283fcd;
     background-color: #6b01a2;
