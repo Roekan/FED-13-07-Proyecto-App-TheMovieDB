@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const ApiKey = '210d6a5dd3f16419ce349c9f1b200d6d'
+const ApiKey = import.meta.env.VITE_SECRETKEY
 
 const films = `https://api.themoviedb.org/3/movie/upcoming?api_key=${ApiKey}&language=en-US`
 const series = `https://api.themoviedb.org/3/tv/airing_today?api_key=${ApiKey}&language=en&page=1`
