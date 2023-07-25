@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import {  HashRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from "./app/store";
 import { PersistGate } from 'redux-persist/es/integration/react'
@@ -16,12 +16,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Provider store={store}>
       {/* Aplicamos la puerta de persistencia en el local Storage */}
       <PersistGate loading={null} persistor={persistor}>
-        {/* BrowserRouter nos implementa la navegación entre páginas */}
-        {/* <BrowserRouter basename='/FED-13-07-Proyecto-App-TheMovieDB/'> */}
+        {/* HashRouter nos implementa la navegación entre páginas en gh-pages.*/}
           <HashRouter>
           <App />
           </HashRouter>
-        {/* </BrowserRouter> */}
       </PersistGate>
     </Provider>
   </React.StrictMode>

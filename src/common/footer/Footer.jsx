@@ -17,7 +17,7 @@ export const Footer = () => {
           </Row>
         </Col>
         <Col className=' d-flex align-items-center justify-content-center flex-column' sm={12} md={4} lg={4}>
-          <a href="/FED-13-07-Proyecto-App-TheMovieDB/" className='py-1' ><img className='logo-footer' src={Logo} /></a>
+          <a href="/" className='py-1' ><img className='logo-footer' src={Logo} /></a>
           <span className='creative-commons-footer'>
             <a  rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
               <img className='img-creative-commons' alt="Licencia de Creative Commons"  src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />
